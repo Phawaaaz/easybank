@@ -97,11 +97,23 @@ body{
 }
 .navbar{
     display: flex;
+    position: relative;
+    gap: 2rem;
 }
-.nav-links {
+.nav-links a{
     margin: 0 2.8rem;
     text-decoration: none;
     color: #555;
+}
+.nav-linkr:after{
+    content: "";
+    background-image: linear-gradient(to left,var(--Dark-blue), var(--light-green));
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: .5rem;
+    /* margin-top: 5px; */
 }
 .sign a{
     color: #fff;
@@ -172,6 +184,9 @@ body{
     text-decoration: none;
     cursor: pointer;
     color: var(--White-);
+}
+.btn a{
+    /* color: #fff; */
 }
 .btn:hover,
 .btn:visited{
@@ -304,6 +319,7 @@ li{
 .footer-button{
     justify-self: self-end;
     text-align: right;
+    color: #fff;
 }
 .btn--foot{
     margin: 2rem;
