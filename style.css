@@ -405,4 +405,11 @@ li{
     .article-text-box{
     padding: 4.4rem 6rem;
     }
+    .footer-grid{
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 1rem;
+        align-items: center;
+        justify-content: center;
+    }
 }
