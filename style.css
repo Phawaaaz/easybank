@@ -382,3 +382,27 @@ li{
         grid-template-columns: 1fr 1fr;
     }
 }
+@media (max-width: 34em) {
+    .grid--4-cols{
+        grid-template-columns: 1fr;
+    }
+    .feature-box{
+        text-align: center;
+        padding: 0 3.8rem;
+    }
+    .features-container{
+        text-align: center;
+        padding: 0 4.2rem;
+    }
+    .feature-heading{
+        font-size: 4.2rem;
+        margin-bottom: 1.2rem;
+    }
+    .article-box{
+        /* padding: 0 1.2rem; */
+        gap: 1.2rem;
+    }
+    .article-text-box{
+    padding: 4.4rem 6rem;
+    }
+}
