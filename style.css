@@ -66,57 +66,64 @@ body{
     --White-: hsl(0, 0%, 100%);
 
 }
-.header-container{
+.navbar {
     display: flex;
-    align-items: center;
-    width: 130rem;
-    padding: 2.8rem 0;
-    align-self: center;
-    z-index: 9999;
-    height: 9.6rem;
-    /* background-color: #ddd; */
     justify-content: space-between;
-    background-color: var(--White-);
-    
+    align-items: center;
+    padding: 10px 20px;
+    color: #222;
+    width: 85%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    background-color: #eee;
+    z-index: 9999;
 
 }
 .header{
-    margin: 0 auto;
     background-color: var(--White-);
-    display: flex;
-    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;    
-    justify-content: center;
-
+    z-index: 9999;
 }
 
-.nav-links{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    
+.logo {
+    font-size: 1.5em;
 }
-.navbar{
+
+.nav-links ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
     display: flex;
-    position: relative;
-    gap: 2rem;
 }
-.nav-links a{
-    margin: 0 2.8rem;
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #444;
     text-decoration: none;
-    color: #555;
+    position: relative;
+    transition: color 0.3s;
 }
-.nav-linkr:after{
-    content: "";
+
+.nav-links a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
     background-image: linear-gradient(to left,var(--Dark-blue), var(--light-green));
+    transition: all 0.3s;
     position: absolute;
+    bottom: -6px;
     left: 0;
-    bottom: 0;
-    width: 100%;
-    height: .5rem;
-    /* margin-top: 5px; */
 }
-.sign a{
-    color: #fff;
+
+.nav-links a:hover {
+    color: #ddd;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
 }
 
 .section-hero{
@@ -293,6 +300,7 @@ footer{
     background-color: var(--Dark-blue);
     padding: 3.2rem 0;
     color: var(--White-);
+    cursor: pointer;
 }
 li{
     list-style: none;
@@ -323,4 +331,7 @@ li{
 }
 .btn--foot{
     margin: 2rem;
+}
+.body-logo{
+    fill: var(--White-);
 }
