@@ -427,12 +427,12 @@ li{
         align-items: center;
         justify-content: center;
         gap: 2rem;
-        z-index: 9999999;
+        z-index: 9999;
         flex-direction: column;
         opacity: 0;
         pointer-events: none;
         visibility: hidden;
-        transform: translateX(100%);
+        transform: translateY(100%);
         transition: all 0.5s ease-in-out;
         backdrop-filter: blur(5px);
     }
@@ -450,17 +450,20 @@ li{
         visibility: visible;
         pointer-events: auto;
         opacity: 1;
-        transform: translateX(0);
+        transform: translateY(0);
     }
     .menu-btn{
         display: block;
     }
-    .nav-open .menu-btn{
+    .nav-open .open{
+        display: none;
+    }
+    .close{
         display: none;
     }
     .nav-open .close{
         display: block;
-        /* z-index: 9999999999999999999; */
+        z-index: 10000000000000000000;
         color: #444;
     }
 
