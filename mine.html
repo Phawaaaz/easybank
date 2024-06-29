@@ -214,5 +214,13 @@
             
         </div>
     </footer>
+    <script>
+        const btnNavEl = document.querySelector(".menu-btn")
+        const headerEl = document.querySelector(".header")
+
+        btnNavEl.addEventListener('click', ()=>{
+            headerEl.classList.toggle("nav-open")
+        })
+    </script>
 </body>
 </html>
